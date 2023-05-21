@@ -46,7 +46,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "getABoard",
 			"id": "3572ddb3-2653-4e6b-93a1-6491f4678024",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
