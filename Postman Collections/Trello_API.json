@@ -58,7 +58,7 @@
 			"response": []
 		},
 		{
-			"name": "createANewList",
+			"name": "toDoList",
 			"id": "c8646019-75b5-4d55-8fa2-882f9cb6f2d1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
