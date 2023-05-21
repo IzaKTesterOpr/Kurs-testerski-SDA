@@ -7,14 +7,41 @@
 	"item": [
 		{
 			"name": "createNewBoard",
-			"_postman_id": "c1b99341-af9e-4922-b740-59ccebe89aad",
+			"id": "c1b99341-af9e-4922-b740-59ccebe89aad",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=SecondBoard&key=6f233afdc5d9301c8fb9ef90622d5034&token=ATTA68824f89b3bf78493a3e0c13c059904419d6d6158d0555dbda5c9cfee89439bcD630D5C8",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "SecondBoard"
+						},
+						{
+							"key": "key",
+							"value": "6f233afdc5d9301c8fb9ef90622d5034"
+						},
+						{
+							"key": "token",
+							"value": "ATTA68824f89b3bf78493a3e0c13c059904419d6d6158d0555dbda5c9cfee89439bcD630D5C8"
+						}
+					]
+				}
 			},
 			"response": []
 		}
