@@ -129,6 +129,11 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check one oneOf elements\", () => {\r",
+							"  var jsonData = pm.response.json();\r",
+							"  pm.expect(jsonData.firstname).to.be.oneOf([\"Iza\"]);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -151,7 +156,7 @@
 						}
 					}
 				},
-				"url": "https://restful-booker.herokuapp.com/booking/11"
+				"url": "https://restful-booker.herokuapp.com/booking/22"
 			},
 			"response": []
 		},
