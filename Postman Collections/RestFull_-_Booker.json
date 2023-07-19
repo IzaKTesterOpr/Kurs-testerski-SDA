@@ -162,6 +162,20 @@
 		},
 		{
 			"name": "Create booking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "83f40afa-786f-4054-a5a9-32dc39b6a841",
+						"exec": [
+							"pm.test(\"Response property matches environment variable\", function () {\r",
+							"pm.expect(pm.response.json().name).to.eql(pm.environment.get(\"CarPark & SPA\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "d39f4780-0b35-41a9-9522-6d8d7de83ad4",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
