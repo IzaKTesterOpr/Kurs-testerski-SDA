@@ -7,7 +7,22 @@
 	"item": [
 		{
 			"name": "Auth - CreateToken",
-			"_postman_id": "80f404f2-940f-4cc6-9f20-ee23c2022ed9",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "93f34fb4-12bb-4d57-9b3b-cd8589b95065",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "80f404f2-940f-4cc6-9f20-ee23c2022ed9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -47,7 +62,7 @@
 		},
 		{
 			"name": "Booking - GetBooking-List of all IDs",
-			"_postman_id": "ef1057ad-4778-4f92-abc0-211afd151b03",
+			"id": "ef1057ad-4778-4f92-abc0-211afd151b03",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -120,7 +135,7 @@
 					}
 				}
 			],
-			"_postman_id": "31fabcfc-8ded-4976-a9d0-5b67e6936407",
+			"id": "31fabcfc-8ded-4976-a9d0-5b67e6936407",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -142,7 +157,7 @@
 		},
 		{
 			"name": "Create booking",
-			"_postman_id": "d39f4780-0b35-41a9-9522-6d8d7de83ad4",
+			"id": "d39f4780-0b35-41a9-9522-6d8d7de83ad4",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -164,7 +179,7 @@
 		},
 		{
 			"name": "Update Booking",
-			"_postman_id": "9d9344ea-c46a-42ef-b772-aee1c50cc0df",
+			"id": "9d9344ea-c46a-42ef-b772-aee1c50cc0df",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -194,10 +209,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"firstname\" : \"Tomek\",\r\n    \"lastname\" : \"Kowal\",\r\n    \"totalprice\" : 10,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2023-07-01\",\r\n        \"checkout\" : \"2023-08-11\"\r\n    },\r\n    \"additionalneeds\" : \"Breakfast\"\r\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\r\n    \"firstname\" : \"Tomek\",\r\n    \"lastname\" : \"Kowal\",\r\n    \"totalprice\" : 10,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2023-07-01\",\r\n        \"checkout\" : \"2023-08-11\"\r\n    },\r\n    \"additionalneeds\" : \"Breakfast\"\r\n}"
 				},
 				"url": "https://restful-booker.herokuapp.com/booking/11"
 			},
@@ -205,7 +217,7 @@
 		},
 		{
 			"name": "Partial Update Booking",
-			"_postman_id": "34013b1e-3052-4565-b290-0ea703871705",
+			"id": "34013b1e-3052-4565-b290-0ea703871705",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -248,7 +260,7 @@
 		},
 		{
 			"name": "Delete Booking",
-			"_postman_id": "203f1d78-3008-4655-ab69-ddd88867f418",
+			"id": "203f1d78-3008-4655-ab69-ddd88867f418",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -272,7 +284,7 @@
 		},
 		{
 			"name": "Ping - Health Check",
-			"_postman_id": "8662ae9e-e12e-4294-a39a-8e0cd6335c77",
+			"id": "8662ae9e-e12e-4294-a39a-8e0cd6335c77",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
